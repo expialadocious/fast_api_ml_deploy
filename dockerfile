@@ -16,4 +16,5 @@ COPY predict.py pipeline_v2.bin ./
 
 EXPOSE 9696
 
-CMD ["uv", "run", "uvicorn", "main:app", "--host", "0.0.0.0", "--port", "9696"]
+CMD ["uv", "run", "uvicorn", "predict:app", "--host", "0.0.0.0", "--port", "9696"]
+
