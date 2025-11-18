@@ -4,6 +4,7 @@ import requests
 
 url = "http://localhost:9696/predict"
 
+### payload contains features to pass to FAST API. See README.md for general feature description and constraints
 payload = {
     "age": 73.0,
     "bp": 70.0,
@@ -30,5 +31,6 @@ payload = {
 }
 
 response = requests.post(url, json=payload)
+
 
 print(response.json())
